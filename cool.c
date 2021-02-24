@@ -62,11 +62,13 @@ int toBlue(double h) {
 
 int main() 
 {
-    screen s;
+    screen s1;
     color c; 
 
+    clear_screen(s1);
+
     int degree;
-    for(degree = 0; degree < 120; degree += 3) 
+    for(degree = 0; degree < 120; degree += 5) 
     {
 
         double x1 = 200 * cos((degree * M_PI) / 180.0) + 250;
@@ -82,11 +84,11 @@ int main()
         c.green = toGreen(degree * 3);
         c.blue = toBlue(degree * 3);
 
-        draw_line(round(x1), round(y1), round(x2), round(y2), s, c);
-        draw_line(round(x2), round(y2), round(x3), round(y3), s, c);
-        draw_line(round(x3), round(y3), round(x1), round(y1), s, c);
+        draw_line(round(x1), round(y1), round(x2), round(y2), s1, c);
+        draw_line(round(x2), round(y2), round(x3), round(y3), s1, c);
+        draw_line(round(x3), round(y3), round(x1), round(y1), s1, c);
  
     }
-
-    save_extension(s, "triangle.png");
+    display(s1);
+    save_extension(s1, "triangle.png");
 }

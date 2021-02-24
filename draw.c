@@ -18,7 +18,6 @@ void draw_line(int x0, int y0, int x1, int y1, screen s, color c) {
     //Octant 1
     if (A <= -1 * B && A > 0) 
     {
-        printf("1\n");
         while (x <= x1)
         {
             plot(s, c, x, y); 
@@ -34,7 +33,6 @@ void draw_line(int x0, int y0, int x1, int y1, screen s, color c) {
     //2 
     else if (A > -1 * B && -1 * B > 0) 
     {
-        printf("2\n");
         while (y <= y1)
         {
             plot(s, c, x, y); 
@@ -50,7 +48,6 @@ void draw_line(int x0, int y0, int x1, int y1, screen s, color c) {
     //3
     else if (A > B && -1 * B < 0) 
     {
-        printf("3\n");
         while (y <= y1)
         {
             plot(s, c, x, y); 
@@ -66,7 +63,6 @@ void draw_line(int x0, int y0, int x1, int y1, screen s, color c) {
     //4
     else if (A <= B && A > 0) 
     {
-        printf("4\n");
         while (x >= x1)
         {
             plot(s, c, x, y); 
@@ -82,7 +78,6 @@ void draw_line(int x0, int y0, int x1, int y1, screen s, color c) {
     //5
     else if (-1 * A <= B && -1* A > 0) 
     {
-        printf("5\n");
         while (x >= x1)
         {
             plot(s, c, x, y); 
@@ -98,7 +93,6 @@ void draw_line(int x0, int y0, int x1, int y1, screen s, color c) {
     //6
     else if (-1 * A > B && B > 0) 
     {
-        printf("6\n");
         while (y >= y1)
         {
             plot(s, c, x, y); 
@@ -114,7 +108,6 @@ void draw_line(int x0, int y0, int x1, int y1, screen s, color c) {
     //7
     else if (-1 * A > -1 * B && -1 * B > 0) 
     {
-        printf("7\n");
         while (y >= y1)
         {
             plot(s, c, x, y); 
@@ -130,7 +123,6 @@ void draw_line(int x0, int y0, int x1, int y1, screen s, color c) {
     //8
     else if (-1 * A <= -1 * B && -1 * A > 0) 
     {
-        printf("8\n");
         while (x <= x1)
         {
             plot(s, c, x, y); 
